@@ -12,8 +12,8 @@ import (
 
 	"log"
 
-	"github.com/gwuhaolin/livego/av"
-	"github.com/gwuhaolin/livego/protocol/amf"
+	"github.com/wanghonggao007/livego/av"
+	"github.com/wanghonggao007/livego/protocol/amf"
 )
 
 var (
