@@ -2,6 +2,7 @@ package configure
 
 import (
 	"encoding/json"
+	"fmt"
 	"io/ioutil"
 	"log"
 )
@@ -51,7 +52,9 @@ func LoadConfig(configfilename string) error {
 }
 
 func CheckAppName(appname string) bool {
+	fmt.Println("====CheckAppName:RtmpServercfg.Server", RtmpServercfg.Server)
 	for _, app := range RtmpServercfg.Server {
+		fmt.Println("====CheckAppName:RtmpServercfg.Server.Appname", app.Appname, app.Liveon, appname)
 		if (app.Appname == appname) && (app.Liveon == "on") {
 			return true
 		}

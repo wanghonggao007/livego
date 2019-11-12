@@ -11,9 +11,8 @@ import (
 	"github.com/wanghonggao007/livego/protocol/httpflv"
 	"github.com/wanghonggao007/livego/protocol/httpopera"
 	"github.com/wanghonggao007/livego/protocol/rtmp"
-
 	/////////////
-	"github.com/wanghonggao007/livego/protocol/rtp"
+	//"github.com/wanghonggao007/livego/protocol/rtp"
 )
 
 var (
@@ -113,10 +112,12 @@ func startHTTPOpera(stream *rtmp.RtmpStream) {
 
 func main() {
 	///////////////
-	rtp.InitRtp()
-	for {
-		time.Sleep(time.Duration(2) * time.Second)
-	}
+	/*
+		rtp.InitRtp()
+		for {
+			time.Sleep(time.Duration(2) * time.Second)
+		}
+	*/
 	///////////////
 
 	defer func() {
